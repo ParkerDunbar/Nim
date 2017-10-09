@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.csc130.nim.view.GameView">
+	<MenuBar>
+		<menus>
+			<Menu  text="Difficulty">
+				<items>
+					<MenuItem  text="Easy"></MenuItem>
+					<MenuItem text="Medium"></MenuItem>
+					<MenuItem text="Hard"></MenuItem>
+				</items>
+			</Menu>
+			<Menu text="Game mode">
+				<items>
+					<MenuItem text="Player vs Player"></MenuItem>
+					<MenuItem text="Player vs AI"></MenuItem>
+				</items>
+			</Menu>
+			<Menu text="Rules"></Menu>
+		</menus>
+	</MenuBar>
+</AnchorPane>
+
