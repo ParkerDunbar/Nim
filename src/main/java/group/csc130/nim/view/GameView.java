@@ -37,7 +37,7 @@ public class GameView extends Application {
 
 	@FXML
 	protected void onClicked(ActionEvent e) {
-
+		
 	}
 
 }

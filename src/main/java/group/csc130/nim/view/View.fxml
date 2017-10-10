@@ -1,28 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.csc130.nim.view.GameView">
-	<MenuBar>
-		<menus>
-			<Menu  text="Difficulty">
-				<items>
-					<MenuItem  text="Easy"></MenuItem>
-					<MenuItem text="Medium"></MenuItem>
-					<MenuItem text="Hard"></MenuItem>
-				</items>
-			</Menu>
-			<Menu text="Game mode">
-				<items>
-					<MenuItem text="Player vs Player"></MenuItem>
-					<MenuItem text="Player vs AI"></MenuItem>
-				</items>
-			</Menu>
-			<Menu text="Rules"></Menu>
-		</menus>
-	</MenuBar>
-</AnchorPane>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="group.csc130.nim.view.GameView">
+	<top>
+		<MenuBar>
+			<menus>
+				<Menu text="Difficulty">
+					<items>
+						<MenuItem text="Easy"></MenuItem>
+						<MenuItem text="Medium"></MenuItem>
+						<MenuItem text="Hard"></MenuItem>
+					</items>
+				</Menu>
+				<Menu text="Game mode">
+					<items>
+						<MenuItem text="Player vs Player"></MenuItem>
+						<MenuItem text="Player vs AI"></MenuItem>
+					</items>
+				</Menu>
+				<Menu text="Rules"></Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<bottom>
+		<HBox alignment="CENTER" spacing="100">
+			<Button text="-" style="-fx-font-size: 50"></Button>
+			<Button text="-" style="-fx-font-size: 50"></Button>
+			<Button text="-" style="-fx-font-size: 50"></Button>
+			<Button text="-" style="-fx-font-size: 50"></Button>
+		</HBox>
+	</bottom>
+	<right>
+		<VBox alignment="CENTER" spacing="100">
+			<Button text="Next Turn" style="-fx-font-size: 30"></Button>
+			<Button text="New Game" style="-fx-font-size: 30"></Button>
+		</VBox>
+	</right>
+</BorderPane>
+
+
 

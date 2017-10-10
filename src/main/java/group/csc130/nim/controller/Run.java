@@ -5,7 +5,8 @@ import group.csc130.nim.view.GameView;
 public class Run {
 
 	public static void main(String[] args) {
-		GameView.launch(GameView.class);
+		MainGame game = new MainGame();
+		game.run();
 	}
 
 }
